@@ -35,8 +35,8 @@ class TimeLoggingApp extends React.Component {
           <div className="flex justify-around pt-3">
             <div className="border border-gray-300 rounded-bl-lg rounded-br-lg" style={{ width: 250 + 'px' }}>
               <div className="p-3">
-                <h2 className="text-xl font-bold text-gray-900">Mow the lawn</h2>
-                <p className="text-gray-500">House Chores</p>
+                <h2 className="text-xl font-bold text-gray-900">Clear Paper Jam</h2>
+                <p className="text-gray-500">Office Chores</p>
                 <p className="text-gray-600 text-3xl font-bold text-center py-1">00:21:13</p>
                 <p className="text-right space-x-2 text-sm">
                   <span className="text-red-600 font-bold">Delete</span>
@@ -51,8 +51,8 @@ class TimeLoggingApp extends React.Component {
           <div className="flex justify-around pt-3">
             <div className="border border-gray-300 rounded-bl-lg rounded-br-lg" style={{ width: 250 + 'px' }}>
               <div className="p-3">
-                <h2 className="text-xl font-bold text-gray-900">Mow the lawn</h2>
-                <p className="text-gray-500">House Chores</p>
+                <h2 className="text-xl font-bold text-gray-900">Ponder Origins of Universe</h2>
+                <p className="text-gray-500">Life Chores</p>
                 <p className="text-gray-600 text-3xl font-bold text-center py-1">14:00:29</p>
                 <p className="text-right space-x-2 text-sm">
                   <span className="text-red-600 font-bold">Delete</span>
@@ -62,6 +62,13 @@ class TimeLoggingApp extends React.Component {
 
               <button className="w-full py-2 text-red-600 border border-red-600 rounded-bl-lg rounded-br-lg">Stop</button>
             </div>
+          </div>
+
+          <div class="flex justify-around py-5">
+            <button 
+              className="py-3 px-6 text-green-600 font-bold border-2 border-green-800 hover:bg-black hover:text-white">
+              Add New
+            </button>
           </div>
 
         </div>
