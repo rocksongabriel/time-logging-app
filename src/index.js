@@ -19,6 +19,6 @@ class App extends React.Component {
 
 
 ReactDOM.render(
-  <TimeLoggingApp />,
+  <App />,
   document.getElementById("root")
 )
