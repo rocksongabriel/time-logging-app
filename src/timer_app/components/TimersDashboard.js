@@ -10,7 +10,9 @@ class TimersDashboard extends React.Component {
     return (
       <div>
         <EditableTimerList />
-        <ToggeableTimerForm />
+        <ToggeableTimerForm 
+          isOpen={true}
+        />
       </div>
     )
   }
