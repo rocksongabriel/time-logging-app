@@ -20,3 +20,6 @@ class ToggeableTimerForm extends React.Component {
     }
   }
 }
+
+
+export default ToggeableTimerForm;
