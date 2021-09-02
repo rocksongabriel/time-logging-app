@@ -19,7 +19,7 @@ class TimerForm extends React.Component {
               />
             </div>
 
-            <div class='pt-3'>
+            <div className='pt-3'>
               <label className="text-lg font-bold">Project</label>
               <input 
                 type="text" 

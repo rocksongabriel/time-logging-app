@@ -1,6 +1,5 @@
 import React from "react";
-import EditableTimerList from "./timer_app/components/EditableTimerList";
-import ToggeableTimerForm from "./timer_app/components/ToggeableTimerForm";
+import TimersDashboard from "./timer_app/components/TimersDashboard";
 
 
 class TimeLoggingApp extends React.Component {
@@ -12,8 +11,7 @@ class TimeLoggingApp extends React.Component {
           <h1 className="text-3xl font-bold mt-5 text-center">Timers</h1>
           <hr className="text-gray-300 mb-5"/>
 
-          <EditableTimerList />
-          <ToggeableTimerForm isOpen={false}/>  
+          <TimersDashboard />
 
         </div>
 
