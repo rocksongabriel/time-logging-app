@@ -2,6 +2,12 @@ import React from "react";
 
 
 class TimerForm extends React.Component {
+
+  state = {
+    title: this.props.title || '',
+    project: this.props.project || '',
+  }
+
   render() {
 
     const submitText = this.props.title ? 'Update' : 'Create';
@@ -14,7 +20,7 @@ class TimerForm extends React.Component {
               <label className="text-lg font-bold">Title</label>
               <input 
                 type="text" 
-                defaultValue={this.props.title}
+                value={this.props.title}
                 className="w-full py-2 border border-gray-300 focus:outline-none px-4 focus:border-gray-500" 
               />
             </div>
@@ -23,7 +29,7 @@ class TimerForm extends React.Component {
               <label className="text-lg font-bold">Project</label>
               <input 
                 type="text" 
-                defaultValue={this.props.project}
+                value={this.props.project}
                 className="w-full py-2 border border-gray-300 focus:outline-none px-4 focus:border-gray-500" 
               />
             </div>
