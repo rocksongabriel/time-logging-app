@@ -6,6 +6,11 @@ class ToggeableTimerForm extends React.Component {
   state = {
     isOpen: false,
   }
+
+  handleFormOpen = () => {
+    this.setState({ isOpen: true });
+  }
+
   render() {
     console.log(this.props);
     if (this.state.isOpen) {
@@ -16,7 +21,8 @@ class ToggeableTimerForm extends React.Component {
       return (
         <div className="flex justify-around py-5">
           <button 
-            className="py-2 px-6 text-green-600 font-bold border-2 border-green-800 hover:bg-black hover:text-white">
+            className="py-2 px-6 text-green-600 font-bold border-2 border-green-800 hover:bg-black hover:text-white"
+            onClick={this.handleFormOpen}>
             Add New
           </button>
         </div>
