@@ -3,9 +3,12 @@ import TimerForm from "./TimerForm";
 
 
 class ToggeableTimerForm extends React.Component {
+  state = {
+    isOpen: false,
+  }
   render() {
     console.log(this.props);
-    if (this.props.isOpen) {
+    if (this.state.isOpen) {
       return (
         <TimerForm />
       )
