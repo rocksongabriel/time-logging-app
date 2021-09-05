@@ -20,11 +20,12 @@ class TimerForm extends React.Component {
 
   // handle the submission of a form
   handleSubmit = () => {
-    this.props.onFormSubmit({
+    const timer = {
       id: this.props.id,
-      title: this.props.title,
-      project: this.props.project
-    })
+      title: this.state.title,
+      project: this.state.project
+    }
+    this.props.onFormSubmit(timer);
   }
 
   render() {
