@@ -6,7 +6,7 @@ import TimeLoggingApp from "./App";
 
 
 // import css files
-import ("./css/tailwind.css");
+import ("./css/index.css");
 
 
 class App extends React.Component {
