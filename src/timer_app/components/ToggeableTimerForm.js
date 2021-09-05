@@ -12,7 +12,6 @@ class ToggeableTimerForm extends React.Component {
   }
 
   render() {
-    console.log(this.props);
     if (this.state.isOpen) {
       return (
         <TimerForm />

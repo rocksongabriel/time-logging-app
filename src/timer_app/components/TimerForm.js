@@ -8,18 +8,18 @@ class TimerForm extends React.Component {
     project: this.props.project || '',
   }
 
-  handleTitleChange = (e) => {
-    this.setState({title: e.target.value});
+  handleTitleChange = (event) => {
+    this.setState({title: event.target.value});
   }
 
-  handleProjectChange = (e) => {
-    this.setState({project: e.target.value});
+  handleProjectChange = (event) => {
+    this.setState({project: event.target.value});
   }
 
   render() {
 
     const submitText = this.props.title ? 'Update' : 'Create';
-
+    
     return (
       <div className="flex justify-around pt-3">
         <div className="border border-gray-300 rounded-bl-md rounded-br-md" style={{ width: 250 + 'px' }}>
@@ -28,7 +28,7 @@ class TimerForm extends React.Component {
               <label className="text-lg font-bold">Title</label>
               <input 
                 type="text" 
-                value={this.props.title}
+                value={this.state.title}
                 className="w-full py-2 border border-gray-300 focus:outline-none px-4 focus:border-gray-500" 
                 onChange={this.handleTitleChange}
               />
@@ -38,7 +38,7 @@ class TimerForm extends React.Component {
               <label className="text-lg font-bold">Project</label>
               <input 
                 type="text" 
-                value={this.props.project}
+                value={this.state.project}
                 className="w-full py-2 border border-gray-300 focus:outline-none px-4 focus:border-gray-500" 
                 onChange={this.handleProjectChange}
               />
