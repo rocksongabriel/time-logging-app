@@ -16,8 +16,12 @@ class Timer extends React.Component {
             <p className="text-gray-500">{this.props.project}</p>
             <p className="text-gray-600 text-3xl font-bold text-center py-1">{elapsedString}</p>
             <p className="text-right space-x-2 text-sm">
-              <span className="text-red-600 font-bold">delete</span>
-              <span className="text-green-800 font-bold">update</span>
+              <button 
+                className="font-bold bg-red-600 text-white py-1 px-2 rounded-md focus:outline-none"
+              >delete</button>
+              <button 
+                className="font-bold bg-green-600 text-white py-1 px-2 rounded-md focus:outline-none"
+              >update</button>
             </p>
           </div>
 

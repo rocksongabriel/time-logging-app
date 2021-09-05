@@ -7,6 +7,7 @@ class EditableTimer extends React.Component {
   state = {
     editFormOpen: false,
   }
+  
   render() {
     if (this.state.editFormOpen) {
       return (
