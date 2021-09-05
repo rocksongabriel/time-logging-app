@@ -8,17 +8,28 @@ class TimerForm extends React.Component {
     project: this.props.project || '',
   }
 
+  // change the title input value
   handleTitleChange = (event) => {
     this.setState({title: event.target.value});
   }
 
+  // change the project input value
   handleProjectChange = (event) => {
     this.setState({project: event.target.value});
   }
 
+  // handle the submission of a form
+  handleSubmit = () => {
+    this.props.onFormSubmit({
+      id: this.props.id,
+      title: this.props.title,
+      project: this.props.project
+    })
+  }
+
   render() {
 
-    const submitText = this.props.title ? 'Update' : 'Create';
+    const submitText = this.props.id ? 'Update' : 'Create';
     
     return (
       <div className="flex justify-around pt-3">
@@ -46,8 +57,12 @@ class TimerForm extends React.Component {
           </div>
 
           <div className="flex">
-            <button className="w-full py-2 text-blue-600 border border-r-0 border-blue-700 rounded-bl-md">{submitText}</button>
-            <button className="w-full py-2 text-red-600 border border-red-700 rounded-br-md">Cancel</button>
+            <button 
+              className="w-full py-2 text-blue-600 border border-r-0 border-blue-700 rounded-bl-md"
+              onClick={this.handleSubmit}>{submitText}</button>
+            <button 
+              className="w-full py-2 text-red-600 border border-red-700 rounded-br-md"
+              onClick={this.props.onFormClose}>Cancel</button>
           </div>
         </div>
       </div>
