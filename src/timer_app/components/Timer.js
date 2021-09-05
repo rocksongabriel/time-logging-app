@@ -21,6 +21,7 @@ class Timer extends React.Component {
               >delete</button>
               <button 
                 className="font-bold bg-green-600 text-white py-1 px-2 rounded-md focus:outline-none"
+                onClick={this.props.onEditFormOpen}
               >update</button>
             </p>
           </div>
